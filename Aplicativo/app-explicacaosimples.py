@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
 
 
-from flask import ( #aqui pesso para importar da biblioteca flask:
+from flask import ( #aqui peço para importar da biblioteca flask:
     Flask,          #a classe que cria o aplicativo web
     render_template,#Serve para carregar um arquivo HTML (o index.html.)
     jsonify,        #Transforma uma resposta Python em formato JSON, para que o navegador consiga entender.
