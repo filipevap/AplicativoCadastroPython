@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro da Turma</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    
+    <h1>Sistema de Cadastro da Turma</h1>
+
+    <div class="caixa">
+        <h2>Cadastrar participante</h2>
+
+        <label>Nome</label>
+        <input type="text" id="nome">
+
+        <label>Idade</label>
+        <input type="number" id="idade">
+
+        <label>Curso ou interesse</label>
+        <select id="curso">
+            <option>Programacao</option>
+            <option>Design</option>
+            <option>Robotica</option>
+            <option>Ingles</option>
+        </select>
+
+        <button onclick="cadastrar()">Cadastrar</button>
+        <button onclick="limparLista()">Limpar lista</button>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <h2>Total de cadastrados: <span id="total">0</span></h2>
+
+    <div id="lista"></div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
